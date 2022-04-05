@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title> Flex box</title>
+<style>
+    #d1{border:5px solid white;
+    padding:12px;
+    height:1000px;
+    width:2000px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-flow:row wrap;
+    justify-content:flex-start;
+    justify-content:center;
+    align-content:center;
+    align-items:stretch;
+    overflow: scroll;
+    overflow-wrap: anywhere;
+    background-image: linear-gradient(to top, white, rgb(148,204,250))
+
+    
+
+    }
+    #a1{
+    background:orange;
+    flex-grow: 1;
+    overflow-wrap: break-word;	
+    width: 100px;
+    }
+    #a2{
+    background:aqua;
+    flex-grow:1;		
+    }
+    #a3{
+    background:pink;
+    }
+    #a4{
+    background:yellow;
+    flex-grow:1;
+    }
+    .c1{border:1px solid red;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    height:80px;
+    margin:30px;
+    flex-grow:1;
+    }	
+</style>
+</head>
+<body>
+
+<div id="d1">
+	<div id="a1" class="c1">Card1hhhhhhhhhh   hhhh hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
+	<div id="a2" class="c1">Card2</div>
+	<div id="a3" class="c1">Card3</div>
+	<div id="a4" class="c1">Card4</div>
+    <div id="a1" class="c1">Card5</div>
+    <div id="a2" class="c1">Card6</div>
+    <div id="a3" class="c1">Card7</div>
+    <div id="a4" class="c1">Card8</div>
+    <div id="a1" class="c1">Card9</div>
+    <div id="a2" class="c1">Card10</div>
+	
+	
+	<div id="a2" class="c1">Cardl1</div>
+	<div id="a3" class="c1">Cardl2</div>
+	<div id="a2" class="c1">Cardl3</div>
+	<div id="a3" class="c1">Cardl4</div>
+	<div id="a4" class="c1">Cardl5</div>
+	<div id="a1" class="c1">Cardl16</div>
+    <div id="a2" class="c1">Cardl17</div>
+    
+	
+	
+</div>
+
+
+
+</body>
+
+</html>

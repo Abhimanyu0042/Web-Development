@@ -1,0 +1,637 @@
+header{
+    margin-left: 11vw;
+    margin-right: 11vw;
+    margin-top: 50px;
+    display: flexbox;
+}
+/*Top logo bar*/
+
+#brand{
+    display: inline-flex;
+}
+.brand1{
+    font-weight:bold;
+    font-size: 250%;  
+}
+.logo{
+    height: 48px;
+    width: 48px;
+}
+#signupbar{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 38.5vw;
+}
+#signupbar>a{
+    border: solid white 4px;
+    border-radius: 30px;
+    padding: 9px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align:center;
+    color: black;
+    font-size: 18px ;
+    font-family: Bahnschrift Black;
+  }
+  #signupbar>a:hover{
+    background-color: rgb(238, 238, 238);
+    color:black;
+  }
+  #signupbar>a:active{
+    opacity: 0.7;
+  }
+  /*Sign in Button and Procedure*/
+  .signin{
+    border: solid white 1px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    text-align:center;
+    color:white;
+    font-size: 18px ;
+    font-family: Bahnschrift;
+    background-color: black;
+      
+  }
+ .signin:hover{
+      opacity: 0.8;
+      cursor: pointer;
+  }
+
+  .signinbox{
+    font-family: Bahnschrift;
+    position: relative;
+    border-style: none;
+    outline: none;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    height: 400px;
+    padding: 50px 150px 0px 0px;
+    margin: 0px 20px 20px 20px;
+    
+}
+#para1{
+    font-size: 28px;    
+    color: rgb(0, 0, 0);
+    line-height: 120%;
+    
+}
+
+
+
+
+.continuewithgoogle{
+    background-image: url(googleicon.png);
+    background-repeat: no-repeat;
+    background-position: 20px 9px;
+    cursor: pointer;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin: 10px 0;
+    outline: 2px;;
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+
+.continuewithfacebook{
+    background-image: url(facebookicon.png);
+    background-repeat: no-repeat;
+    background-position: 20px 9px;
+    cursor: pointer;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin: 10px 0;
+    outline: 2px;;
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.continuewithemail{
+    background-image: url(emailicon.png);
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-size: 25px;
+    cursor: pointer;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    margin: 10px 0;
+    outline: 2px;;
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.loginbox{
+    position: relative;
+    border-style: none;
+    font-family: Bahnschrift;
+    outline: none;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    height: 400px;
+    padding: 50px 150px 0px 0px;
+    margin: 0px 20px 20px 20px;
+
+}
+h1 {
+    margin: 0;
+    padding: 0px 20px 20px 0px;
+    font-size: 25px;
+    font-size: 30px;
+
+}
+.loginbox p{
+    margin: 0px 20px 0px 0px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.loginbox input{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.loginbox input[type="email"], input[type="password"]
+{
+    border: 1px solid gray;
+    border-radius: 7px;
+    width: 400px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 40px;   
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: darkgray;
+}
+.loginbox a:hover
+{
+    color: skyblue;
+}
+.modal:nth-of-type(even) {
+    z-index: 1052 !important;
+}
+.modal:nth-of-type(even) {
+    z-index: 1051 !important;
+}
+
+  /*Navigation Bar`*/
+
+  #navbar{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  #navbar>a{
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 14px;
+    margin: 5px;
+    width: 140;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align:center;
+    color:black;
+    font-family: Bahnschrift;
+    
+  }
+  #navbar>a:hover i{
+    animation: rotate 1s ease-in-out;
+  }
+  @keyframes rotate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  #navbar>a:hover{
+    background-color: black;
+    color: white;
+  }
+  #navbar>a:active{
+    opacity:0.7;
+  }
+  /*Search Box with scenery background Image*/
+
+  #searchbox{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    background-image: url("scenery1.jpg");
+    height: 50%;
+    margin-top: 25px;
+    justify-content: center;
+    padding: 145px;
+    background-size: cover;
+    border-radius: 10px;
+    padding-left: 210px;
+  }
+  .slogan{
+    font-family: Bahnschrift;
+    font-size: 50px;
+    padding-left: 5vw;
+    padding-bottom: 0vh;
+    color: white;
+    font-weight: 600;
+  }
+  .slogan1{
+    font-family: bahnschrift;
+    padding: 20px;
+    padding-left: 9vw;
+  }
+  .searchbar{
+    height: 3.5rem;
+    width: 50vw;
+    border-radius: 50px;
+    border-color: white;
+    box-shadow: 4px 4px 7px black;
+    background-image: url("search.png.png");
+    background-repeat: no-repeat;
+    background-position: 18px 14px;
+    padding: 12px 0px 12px 60px;
+  } 
+  /* Text after Search Box*/
+  #SLOGAN{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    color: rgb(89, 89, 89);
+    font-family: Bahnschrift;
+    padding:20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .slogo{
+    font-size: 35px;
+    font-weight: 900;
+  }
+  /* Explore Expereince*/
+
+  /*I1, I2, I3 are Div boxes used as tiles with diff. height and width*/
+  
+  #exploreexpereince{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+  }
+  .Subtitle{
+    font-size: 30px;
+    font-weight:600;
+    padding-top: 30px;
+    font-family: Bahnschrift;
+  }
+  .Imagesscroll{
+    display: flex;
+    overflow: auto;
+    justify-content:space-between;
+    scroll-behavior: smooth;
+  }
+  .I1{
+    width: 300px;
+    height: 410px;
+    margin: 20px 20px 10px;
+  }
+  .I1:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .text-block{
+    margin-top: 270px;
+    width: 300px;
+    padding-right: 20px;
+
+  }
+  .price{
+    color: rgb(67, 67, 67);
+    font-weight: 500;
+  }
+  #Camping{
+    background-image: url("camping-in-nainital1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #trek{
+    background-image: url("Hampta\ Pass\ trek\,\ Kullu1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #Surfing{
+    background-image: url("surfing\ goa1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #rafting{
+    background-image: url("river\ rafting\,kullu1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #Bungee{
+    background-image: url("bungee-jump-rishikesh1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #Shikara{
+    background-image: url("ShikaraRideSrinagar1.jpg");
+    background-repeat: no-repeat;
+    background-size:20rem;
+    background-position: top;
+  }
+  #like{
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    transition: all 0.5s;
+    margin-left: 240px;
+  }
+  #like:hover{
+    cursor: pointer;
+    color: red;
+  }
+  /*.rightbutton>a>i{
+    margin-top: 9.5rem;
+    margin-left: 82rem;
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.3s;
+    position: absolute;
+    background-color: white;
+    color: black;
+  }
+  .rightbutton>a>i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  a :link{
+    text-decoration: none;
+  }
+  .leftbutton>a>i{
+    margin-top: 9.5rem;
+    margin-right: 20rem;
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.3s;
+    position: absolute;
+    background-color: white;
+    color: black;
+  }
+  .leftbutton>a>i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }*/
+
+  /*Winter Escapes*/
+
+  #winterescapes{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: 90px;
+  }
+  .I2{
+    width: 400px;
+    height: 390px;
+    margin: 20px 20px 10px ;
+  }
+  .text-block1{
+    margin-top: 260px;
+    width: 400px;
+    padding: 10px;
+    margin-right: 20rem;
+    background-color: white;
+  }
+  #Narkanda{
+    background-image: url("narkanda.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #like1{
+    margin-left: 345px;
+    font-size: 20px;
+    margin-top: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  #like1:hover{
+    cursor: pointer;
+    color: red;
+  }
+  #Valley{
+    background-image: url("valley.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Ski{
+    background-image: url("Ski.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Yumthang{
+    background-image: url("Yumthangvalley.jpg");
+    background-repeat: no-repeat;
+  }
+  #mountain{
+    background-repeat: no-repeat;
+    background-image: url("mountain.jpg");
+  }
+  .text-block1:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .widebox{
+    background-color: rgb(255, 240, 209);
+    margin-top: 90px;
+  }
+  /*Dream your Next Trip*/
+
+  .Dreamyournexttrip{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: 40px;
+  }
+  .Images{
+    display: flex;
+    flex-flow: row wrap;
+    overflow-wrap: normal;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+
+  }
+  .I3{
+    width: 310px;
+    height: 310px;
+    margin-bottom: 10px;
+
+  }
+  .Imagetext{
+    margin-left: 0.3vw;
+    margin-top: 23.2vh;
+    width: 300px;
+    padding: 10px;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), black);
+  }
+  .Imagetext>a:link{
+    text-decoration: none;
+    color: white;
+  }
+  .Imagetext a:visited{
+    text-decoration: none;
+    color: white;
+  }
+  .Imagetext a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  #Manali{
+    background-image: url("manali.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #like2{
+    margin-left: 260px;
+    font-size: 20px;
+    margin-top: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  #like2:hover{
+    cursor: pointer;
+    color: red;
+  }
+  #Chandigarh{
+    background-image: url("Chandigarh.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Mohali{
+    background-image: url("Mohali1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Amritsar{
+    background-image: url("amritsar.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Panchkula{
+    background-image: url("Panchkula12.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Katra{
+    background-image: url("Katra.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Dalhousie{
+    background-image: url("Dalhousie.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #Gurugram{
+    background-image: url("Gurgaon.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .I3:hover{
+    opacity: 0.9;
+    box-shadow: 4px 4px 9px black;
+  }
+  .I2:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  /*Credits and End Part*/
+
+  .Ending{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: 0px; 
+  }
+  .I4{
+    width: 410px;
+    height: 320px;
+    margin: 20px 20px 10px ;
+  }
+  .endingsubtitle{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(92, 92, 27);
+    font-weight: 550;
+  }
+  .I4 li {
+    list-style-type: none;
+    padding-top: 7px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 550;
+
+  }
+  .I4>ol>li>a:link,a:visited{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }
+  .I4>ol>li>a:hover{
+    text-decoration: underline;
+    color: rgb(128, 128, 1);
+  }
+  
+
+
+

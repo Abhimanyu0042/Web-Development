@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hotels From Chandigarh</title>
+  <link rel="icon" href="landscape.png" type="imgpng">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2fe55cae00.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Hotel.css">
+</head>
+
+<body>
+  <div id="brand" ><img class="logo" src="landscape.png"><div class="brand1">Travellndia</div>
+            <div id="signupbar">
+                <a href="#trips"><i class="far fa-heart"></i> Trip</a>
+                <a href="feedback.html"><i class="fas fa-pencil-alt"></i> Query</a>
+                <a href="#Alerts"><i class="far fa-bell"></i> Alerts</a>
+            </div>
+            </div>
+  <div id="navbar">
+    <a href="HomePage.html">Homeㅤㅤㅤㅤㅤ<i class="fas fa-hotel"></i></a>
+    <a href="booking_details.html">Flightsㅤㅤㅤㅤㅤㅤ<i class="fas fa-fighter-jet"></i></a>
+    <a href="#things">Places to Visit ㅤㅤㅤㅤㅤ<i class="i fas fa-clipboard-list"></i></a>
+    <a href="#eat">Restaurants ㅤㅤㅤㅤㅤ<i class="i fas fa-utensils"></i></a>
+    <a href="#booking">Bookings ㅤㅤㅤㅤㅤ<i class="i fas fa-ticket-alt"></i></a>
+    <a href="comingsoon.html">More ㅤㅤㅤㅤㅤ<i class="fas fa-ellipsis-h"></i></a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="trip">
+      <p>Chandigarh Hotels and Places to Stay</p>
+      <hr>
+      <div class="input-box">
+        <div class="input-box3"><img src="https://img.icons8.com/material-outlined/18/000000/planner.png" class="inputboxicon" />Check In<br><input type="date" class="value-box" required></div>
+        <div class="input-box4"><img src="https://img.icons8.com/material-outlined/20/000000/planner.png" class="inputboxicon"/>Check Out<br><input type="date" class="value-box" required></div>
+        <div class="input-box5"><img src="https://img.icons8.com/windows/20/000000/person-male.png" class="inputboxicon"/>Guests<br><input type="number" value="1" class="value-box" max="4" min="1"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid lower1">
+    <div class="lower">
+      <div class="col-2">
+        <div class="filter">
+          <form>
+            
+              
+                <p><b>COVID-19</b></p>
+              
+              <input type="checkbox" name="covidmeasure"> Properties taking safety measures<br>
+
+              <hr>
+            
+
+                <p><b>Deals</b></p>
+              <input type="checkbox" name="freecancellation"> Free cancellation<br>
+              <input type="checkbox" name="reservenow"> Reserve now, pay at stay<br>
+              <input type="checkbox" name="Specialoffers"> Properties with special offers<br> 
+              <hr>
+    
+              <p><b>Price</b></p>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="10000" value="0" class="slider" id="myRange">
+                <p class="info">Price + estimated taxes and fees payable at booking time</p>
+              </div>
+              <hr>
+              <p><b>Popular</b></p>
+              <input type="checkbox" name="5star"> 5 stars<br>
+              <input type="checkbox" name="4starandup"> &#9733;&#9733;&#9733;&#9733;&#9734; & up<br>
+              <input type="checkbox" name="4star"> 4 stars<br>
+              <input type="checkbox" name="Breakfastincluded"> Breakfast included<br>
+              <hr>
+            
+              
+                <p><b>Property Types</b></p>
+
+              <input type="checkbox" name="hotels"> Hotels<br>
+              <input type="checkbox" name="Guesthouses"> Guest Houses<br>
+              <input type="checkbox" name="Specialitylodgings"> Speciality lodgings<br>
+              <input type="checkbox" name="Lodges"> Lodges<br>
+              <hr>
+
+                <p><b>Amenities</b></p>
+
+              <input type="checkbox" name="freewifi"> Free Wifi<br>
+              <input type="checkbox" name="Breakfastincluded"> Breakfast included<br>
+              <input type="checkbox" name="pool"> Pool<br>
+              <input type="checkbox" name="Freeparking"> Free parking<br>
+              <a href="#amenities" class="btn btn-dark" data-bs-toggle="collapse">More </a><br>
+              <div class="collapse" id="amenities">
+                <input type="checkbox" name="Airconditioning"> Air conditioning<br>
+                <input type="checkbox" name="Airporttransportation"> Airport Transportation<br>
+                <input type="checkbox" name="Badminton"> Badminton<br>
+                <input type="checkbox" name="Barlounge"> Bar Lounge<br>
+                <input type="checkbox" name="bowling"> Bowling<br>
+                <input type="checkbox" name="Businesscenter"> Business center<br>
+                <input type="checkbox" name="Fitnesscenter"> Fitness center<br>
+                <input type="checkbox" name="Freeinternet"> Free Internet<br>
+                <input type="checkbox" name="Restaurant"> Restaurant<br>
+                <input type="checkbox" name="Suites"> Suites<br>
+                <input type="checkbox" name="Wheelchair"> Wheel chair access<br>
+                <input type="checkbox" name="Conferencefacilities"> Conference facilities<br>
+                <input type="checkbox" name="Spa"> Spa<br>
+                <input type="checkbox" name="Rooftopbar"> Rooftop Bar<br>
+              </div>
+              <hr>
+              <p><b>Traveller Rating</b></p>
+              <input type="radio" name="5star"> &#9733;&#9733;&#9733;&#9733;&#9733;<br>
+              <input type="radio" name="5star"> &#9733;&#9733;&#9733;&#9733;&#9734; & up<br>
+              <input type="radio" name="5star"> &#9733;&#9733;&#9733;&#9734;&#9734; & up<br>
+              <input type="radio" name="5star"> &#9733;&#9733;&#9734;&#9734;&#9734; & up<br>
+              <hr>
+              <p><b>Style</b></p>
+              <input type="checkbox" name="budget"> Budget<br>
+              <input type="checkbox" name="Midrange"> Midrange<br>
+              <input type="checkbox" name="Luxury"> Luxury<br>
+              <input type="checkbox" name="family"> Family Friendly<br>
+              <input type="checkbox" name="Modern"> Modern<br>
+              <input type="checkbox" name="Romantic"> Romantic<br>
+              <hr>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="Hotels">
+      <div id="JW" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">JW Marriott Chandigarhㅤ<a href="https://www.google.com/maps/place/JW+Marriott+Hotel+Chandigarh/@30.7266978,76.764638,17z/data=!3m1!4b1!4m8!3m7!1s0x390fedb04b1c07c3:0x7e245c01f37d931f!5m2!4m1!1i2!8m2!3d30.7266978!4d76.7668267"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 11,975</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-alt checked"></span>
+            <br>
+            <span>#1 Best Value of places in to<br> stay in Chandigarh</span><br>
+          <span><i class="fas fa-wifi"></i>ㅤFree wifi</span><br>
+        <span><i class="fas fa-parking"></i>ㅤFree parking</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span><br>
+      <span><i class="fas fa-swimmer"></i>ㅤPool</span></div>
+      </div>
+
+      <div id="oyo" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">4 by Oyo Chandigarhㅤ<a href="https://www.google.com/maps/place/4+By+OYO+-+Chandigarh/@30.6384661,76.82026,17z/data=!3m1!4b1!4m8!3m7!1s0x390fc1cc9fef76f3:0x22a9ca24b2256485!5m2!4m1!1i2!8m2!3d30.6387659!4d76.8224356"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 2,832</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            <br>
+            <span>#2 Best Value of places in to<br> stay in Chandigarh</span><br>
+          <span><i class="fas fa-wifi"></i>ㅤFree wifi</span><br>
+        <span><i class="fas fa-parking"></i>ㅤFree parking</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span></div>
+      </div>
+
+      <div id="Hometel" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">Hometel Chandigarhㅤ<a href="https://www.google.com/maps/place/Hometel+Chandigarh/@30.7081999,76.8004202,17z/data=!3m1!4b1!4m8!3m7!1s0x390fecea554a782f:0xfe56912e1b710d34!5m2!4m1!1i2!8m2!3d30.7082122!4d76.8028196"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 2,520</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-alt checked"></span>
+            <br>
+            <span>#3 Best Value of places in to<br> stay in Chandigarh</span><br>
+          <span><i class="fas fa-wifi"></i>ㅤFree wifi</span><br>
+        <span><i class="fas fa-parking"></i>ㅤFree parking</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span></div>
+      </div>
+
+      <div id="Redfox" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">Red Fox Hotel Chandigarhㅤ<a href="https://www.google.com/maps/place/Red+Fox+Hotel,+Chandigarh/@30.7129167,76.8062127,15z/data=!4m8!3m7!1s0x0:0xeb0075c4959ac62d!5m2!4m1!1i2!8m2!3d30.7129894!4d76.8062063"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 5,222</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="far fa-star checked"></span>
+            <br>
+            <span>#4 Best Value of places in to<br> stay in Chandigarh</span><br>
+          <span><i class="fas fa-wifi"></i>ㅤFree wifi</span><br>
+        <span><i class="fas fa-parking"></i>ㅤFree parking</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span></div>
+      </div>
+
+      <div id="lalit" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">The Lalit Chandigarhㅤ<a href="https://www.google.com/maps/place/The+LaLiT+Chandigarh/@30.7308344,76.8413029,15z/data=!4m8!3m7!1s0x0:0x5e136f50f545b1fc!5m2!4m1!1i2!8m2!3d30.7306047!4d76.8412864"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 7,279</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-alt checked"></span>
+            <br>
+            <span>#5 Best Value of places in to<br> stay in Chandigarh</span><br>
+          <span><i class="fas fa-wifi"></i>ㅤFree wifi</span><br>
+          <span><i class="fas fa-swimmer"></i>ㅤPool</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span></div>
+      </div>
+
+      <div id="lemontree" class="box1">
+        <i id="like1" class="fas fa-heart"></i>
+        <div class="hotellogocontent">
+            <h2 class="Hotelsheading">Lemon Tree Hotel Chandigarhㅤ<a href="https://www.google.com/maps/place/Lemon+Tree+Hotel,+Chandigarh/@30.7055208,76.8030548,15z/data=!4m8!3m7!1s0x0:0xe0e8a9bccc7a28ba!5m2!4m1!1i2!8m2!3d30.7054301!4d76.8031465"><i class="fas fa-map-marked-alt"></i></a></h2> 
+            <span class="money">&#8377 6,545</span>
+            <a href="payment.html"><button class="book">Book Now</button></a>
+            <span class="Hotelpoints">&#10003 Free Cancellation </span>
+            </div>
+            <div class="vl"></div>
+            <div class="rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-alt checked"></span>
+            <br>
+            <span>#6 Best Value of places in to<br> stay in Chandigarh</span><br>
+            <span><i class="fas fa-parking"></i>ㅤFree parking</span><br>
+            <span><i class="fas fa-swimmer"></i>ㅤPool</span><br>
+      <span><i class="fas fa-hands-wash"></i>ㅤTaking safety measures</span></div>
+      </div>
+
+      <center><button href="#viewmore" class="btn btn-dark view">View More</button></center>
+     
+    </div>
+  </div>
+  <footer class="container-fluid widebox">
+    <div class="Ending">
+        <div class="Imagesscroll">
+            <div class="I4">
+                <ol ><font class="endingsubtitle">About Travelindia</font>
+                    <li><a href="#abouttravelindia">About Us</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+                    <li><a href="#booking">Book your trip</a></li>
+                    <li><a href="followus">Follow us</a></li>
+                    <li><i class="fab fa-twitter"></i>ㅤㅤ<i class="fab fa-instagram"></i>ㅤㅤ<i class="fas fa-envelope"></i>ㅤㅤ<i class="fab fa-facebook"></i></li>
+                </ol>
+            </div>
+            <div class="I4">
+                <ol ><font class="endingsubtitle">For Travellers</font>
+                    <li><a href="#account">Create an Account</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#review">Write a Review</a></li>
+                    <li><a href="#guideline">Review Guidelines</a></li>
+                    <li><a href="followus">Follow us</a></li>
+                    
+                </ol>
+            </div>
+            <div class="I4">
+                <ol ><font class="endingsubtitle">Explore</font>
+                    <li><a href="#login">Join Us</a></li>
+                    <li><a href="#Feedback">Feedback</a></li>
+                    <li><a href="#Travelarticles">Travel articles</a></li>
+                    <li><a href="#Helpcenter">Help Center</a></li>
+                    <li><a href="#Policy">Privacy Policy</a></li>
+                    <li><a href="#Terms">Terms and Condition</a></li>
+                    <li><a href="#youtube">Our Youtube Channel</a></li>
+                    <li><a href="#Responsibility">How to travel responsibly</a></li>
+                    
+                </ol>
+            </div>
+            <div class="I4">
+                <ol ><font class="endingsubtitle">Learn More</font>
+                    <li><a href="#website">How to Build this Site</a></li>
+                    <li><a href="#tour">Tours and Travel</a></li>
+                    <li><a href="#Advertise">Advertise With Us</a></li>
+                    <li><a href="#Call">Toll-free Number</a></li>
+                    <li><i class="fas fa-phone"></i></li>
+                    
+                </ol>
+            </div>
+        </div>
+
+</footer>
+</body>
+
+</html>

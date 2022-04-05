@@ -1,0 +1,393 @@
+
+#brand{
+    display: inline-flex;
+    margin-left: 11.5vw;
+    margin-top: 6vh;
+  }
+  .brand1{
+    font-weight:bold;
+    font-size: 240%;  
+  }
+  .logo{
+    height: 48px;
+    width: 48px;
+  }
+  #signupbar{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 44vw;
+  }
+  #signupbar>a{
+    border: solid white 4px;
+    border-radius: 30px;
+    padding: 9px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align:center;
+    color: black;
+    font-size: 18px ;
+    font-family: Bahnschrift Black;
+  }
+  #signupbar>a:hover{
+    background-color: rgb(238, 238, 238);
+    color:black;
+  }
+  #signupbar>a:active{
+    opacity: 0.7;
+  }
+  .trip{
+      font-weight: 500;
+      font-size: 30px;
+      margin-left: 11.5vw;
+      margin-right: 11.5vw;
+      font-family: Bahnschrift;
+      margin-top: 2vh;
+     
+      
+  }
+  .input-box{
+   font-size: 17px;
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+   font-family: Bahnschrift;
+  }
+  .input-box3,.input-box4,.input-box5{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius:10px ;
+    padding-left: 10px;
+    width: 410px;
+    box-shadow: 2px 2px 2px;
+    height: 60px;
+    font-family: Bahnschrift;
+    border-left: 10px solid ;
+  }
+  .input-box3{
+      border-left-color: rgb(20, 145, 20);
+  }
+  .input-box4{
+    border-left-color: rgb(192, 0, 0);
+}
+.input-box5{
+    border-left-color: rgb(130, 139, 149);
+}
+
+  .value-box{
+    width: 97%;
+    margin-left: 0.5%;
+    padding: 2px;
+    font-size: 15px;
+    outline: none;
+    border-style: none;
+    font-family: Bahnschrift;}
+  
+  
+  
+  .lower{
+    
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    padding-top: 20px;
+  
+  
+  }
+  .lower1{
+    background-color: rgba(211, 211, 211, 0.315);
+    display: flex;
+  
+  }
+  details > summary {
+    list-style: none;
+  
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+    
+  }
+  
+  #navbar{
+      
+      display: flex;
+      justify-content:space-evenly;
+      margin-left: 11.5vw;
+      margin-right: 11.5vw;
+    }
+  #navbar>a{
+      border: solid black 1px;
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 140;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align:center;
+      color:black;
+      font-family: Bahnschrift;
+      
+    }
+  #navbar>a:hover i{
+      animation: rotate 1s ease-in-out;
+    }
+  @keyframes rotate{
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  #navbar>a:hover{
+      background-color: black;
+      color: white;
+    }
+  #navbar>a:active{
+      opacity:0.7;
+    }
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background:black; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-style: solid;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  #more {display: none;}
+  
+  .filter{
+    border: 0.1px solid white;
+    padding: 15px;
+   background-color: white;
+   width: 300px;
+  }
+  .info{
+      border: 1px solid  grey;
+      padding: 5px;
+      margin-top: 6px;
+  }
+  .Hotels{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    overflow: auto;
+    justify-content: space-between;
+    
+    padding-top: 12px;
+    margin-left: -180px;
+  }
+  .box1{
+    width: 950px;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+  
+  }
+  .box1:hover{
+    box-shadow: 3px 3px 12px lightgray;
+  }
+  #Tulip{
+    background-image: url(tulip.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #sunpark{
+    background-image: url(sun.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #IHG{
+    background-image: url(ihg.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #pallavi{
+    background-image: url(pallavi.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #ramgarh{
+    background-image: url(ramgarh.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #bellavista{
+    background-image: url(bella.jpg);
+    background-position: left;
+    background-size:350px 300px;
+    background-repeat: no-repeat;
+  }
+  #like1{
+    margin-left: 290px;
+    height: max-content;
+    font-size: 20px;
+    margin-top: -9px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  #like1:hover{
+    cursor: pointer;
+    color: red;
+  }
+  .hotellogocontent{
+    padding-left: 35px;
+    font-family: Bahnschrift SemiCondensed;
+  }
+  .Hotelsheading{
+    font-family: 'Trip Sans VF', 'Trip Sans', Arial, sans-serif;
+    font-weight: 600;
+  }
+  .Hotelsheading:hover{
+    cursor: pointer;
+  }
+  .Hotelsheading>a:link{
+    text-decoration: none;
+    color: black;
+  }
+  .Hotelsheading>a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  .rating{
+    position: relative;
+    top:60px;
+    left: 50px;
+    font-family: arial;
+    opacity: 0.8;
+    font-size: 17px;
+    text-align: left;
+    font-family: Bahnschrift;
+  }
+  .checked {
+    color: orange;
+  }
+  .money{
+    position: relative;
+    margin-left: 60px;
+    top: 30px;
+    font-size: 40px;
+    font-family: Bahnschrift SemiCondensed;
+    
+  }
+  .book{
+    position: relative;
+    height: 45px;
+    width: 240px;
+    top: 100px;
+    right: 175px;
+    font-weight: bold;
+    font-size: large;
+
+    border-radius: 20px;
+    background-color: #f2b203;
+    border-color:  #f2b203;
+    box-shadow:3px 3px 6px lightgray;
+  }
+  .book:hover{
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .Hotelpoints{
+    position: relative;
+    top: 150px;
+    right: 420px;
+  }
+  .vl {
+    border-left: 1px dashed rgb(198, 198, 198);
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+    margin-left: -270px;
+    top: 0;
+  }
+  .view{
+    width:max-content;
+    margin: 6px 0px 15px 0px ;
+  }
+  .Ending{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: 0px; 
+  }
+  .I4{
+    width: 410px;
+    height: 320px;
+    margin: 20px 20px 10px ;
+  }
+  .endingsubtitle{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(92, 92, 27);
+    font-weight: 550;
+  }
+  .I4 li {
+    list-style-type: none;
+    padding-top: 7px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 550;
+  
+  }
+  .I4 ol li a:link,a:visited{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }
+  .I4 ol li a:hover{
+    text-decoration: underline;
+    color: rgb(128, 128, 1);
+  }
+  .widebox{
+    background-color: rgb(255, 240, 209);
+  
+  }
+  .Imagesscroll{
+    display: flex;
+    overflow: auto;
+    justify-content:space-between;
+    scroll-behavior: smooth;
+  }

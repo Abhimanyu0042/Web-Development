@@ -1,0 +1,229 @@
+body{
+    margin-top: 3%;
+}
+#brand{
+    display: inline-flex;
+    margin-left: 11.5vw;
+    margin-top: 1vh;
+  }
+  .brand1{
+    font-weight:bold;
+    font-size: 240%;  
+  }
+  .logo{
+    height: 48px;
+    width: 48px;
+  }
+  #signupbar{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 44vw;
+  }
+  #signupbar>a{
+    border: solid white 4px;
+    border-radius: 30px;
+    padding: 9px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align:center;
+    color: black;
+    font-size: 18px ;
+    font-family: Bahnschrift Black;
+  }
+  #signupbar>a:hover{
+    background-color: rgb(238, 238, 238);
+    color:black;
+  }
+  #signupbar>a:active{
+    opacity: 0.7;
+  }
+.boxese{
+    margin-left: 23vw;
+}
+.content{
+    background-color: rgba(211, 211, 211, 0.315);
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.payment-box{
+    background-color: white;
+    max-width: 350px;
+    padding-bottom: 23.6vw;
+    border-radius: 10px;
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 5px;
+    font-family: Bahnschrift;
+    margin-left: 3vw;
+
+}
+.back-button{
+    padding-top: 5%;
+    margin: 5%;
+}
+.text1{
+    font-family: Bahnschrift;
+    margin-left: 5%;
+    font-size: 25px;
+    margin-top: 15%;
+}
+.money{
+    margin-left: 5%;
+    font-family: Bahnschrift;
+    margin-top: 10%;
+    font-size: 17px;
+}
+.money-value{
+    color: red;
+    font-family: Bahnschrift;
+}
+.card-box{
+    margin-left: 32.3%;
+    margin-top: -75.7vh;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    padding-bottom: 20vh;
+}
+.cards{
+    padding-top: 1%;
+    margin-left: 5%;
+    font-family: Bahnschrift;
+}
+.visa{
+    font-family: Bahnschrift;
+    margin-top: 10%;
+}
+.more-options{
+    font-family: Bahnschrift;
+    margin-top: 10%;
+}
+#a1{
+    margin-left: 90%;
+    display: flex;
+}
+.options{
+    font-family: Bahnschrift;
+    margin-top:10%;
+
+}
+.opt1:hover{
+    cursor: pointer;
+}
+.val1{
+    display: flex;
+    border-radius: 3px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1%;
+}
+.card1{
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card-value{
+    display: flex;
+    border-color: lightgray;
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.text{
+    margin-left: -11%;
+    
+}
+.text:hover{
+    cursor: pointer;
+}
+.btn1{
+    background: transparent;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
+    display: flexbox;
+    margin: 1%;
+    padding: 10px;
+    width: 20%;
+    margin-left: 1vw;
+    
+}
+.quick-option{
+    margin-top: 3%;
+    margin-left: -10%;
+}
+.btn1:hover{
+    cursor: pointer;
+}
+.visa:hover{
+    cursor: pointer;
+}
+.btn1:hover{
+    border-color: black;
+}
+.t1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Bahnschrift;
+    text-align: center;
+
+}
+#h1{
+margin-left: -11%;
+cursor: pointer;
+}
+
+.text:hover{
+    cursor: pointer;
+}
+.Ending{
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    margin-top: 0px; 
+  }
+  .I4{
+    width: 410px;
+    height: 320px;
+    margin: 20px 20px 10px ;
+  }
+  .endingsubtitle{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(92, 92, 27);
+    font-weight: 550;
+  }
+  .I4 li {
+    list-style-type: none;
+    padding-top: 7px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 550;
+  
+  }
+  .I4 ol li a:link,a:visited{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }
+  .I4 ol li a:hover{
+    text-decoration: underline;
+    color: rgb(128, 128, 1);
+  }
+  .widebox{
+    background-color: rgb(255, 240, 209);
+  
+  }
+  .Imagesscroll{
+    display: flex;
+    overflow: auto;
+    justify-content:space-between;
+    scroll-behavior: smooth;
+  }
+
+

@@ -1,0 +1,274 @@
+body{
+    background-image: url("hotelbookingbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:170px ;
+    opacity: 1;
+}
+#brand{
+  display: inline-flex;
+  margin-left: 11.5vw;
+  margin-top: 35px;
+  
+
+}
+.brand1{
+  font-weight:bold;
+  font-size: 240%;  
+}
+.logo{
+  height: 48px;
+  width: 48px;
+}
+#signupbar{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 44vw;
+}
+#signupbar>a{
+  border: solid white 4px;
+  border-radius: 30px;
+  padding: 9px;
+  margin: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align:center;
+  color: black;
+  font-size: 18px ;
+  font-family: Bahnschrift Black;
+}
+#signupbar>a:hover{
+  background-color: rgb(238, 238, 238);
+  color:black;
+}
+#signupbar>a:active{
+  opacity: 0.7;
+}
+.booking-form-box{
+  margin-top: 6%;
+  background-color: white;
+  max-width: 750px;
+  margin-left: 43%;
+  padding-bottom: 10px;
+  border-radius:10px;
+  font-family: Bahnschrift;
+}
+.main-heading{
+  font-family: Bahnschrift;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 22px;
+  color: #000000;
+  padding-top:7%;
+  margin-left: 5%;
+  padding-bottom:  5%;
+}
+.input-boxes{
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  max-width: 46%;
+  border-radius: 10px;
+  padding: 1%;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.value-box{
+  width: 96%;
+  border-style: none;
+  outline: none;
+  margin-left: 0.5%;
+  padding: 1.7px;
+  font-family: Bahnschrift;
+}
+.input-boxes:hover{
+  border-color: black;
+}
+.input-boxes1{
+  margin-left: 55%;
+  margin-top: -10%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  max-width: 40%;
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 6%;
+}
+.input-boxes1:hover{
+  border-color: black;
+}
+.input-boxes2{
+  max-width: 22%;
+  margin-left: 3%;
+  margin-top: -2%;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-bottom: 7px;
+  font-family: Bahnschrift;
+}
+.input-boxes2:hover{
+  border-color: black;
+}
+.input-boxes3{
+  margin-left: 27%;
+  max-width: 24%;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-top: -8%;
+  border-style: solid;
+}
+.input-boxes3:hover{
+  border-color: black;
+}
+.input-boxes4{
+  margin-left: 55%;
+  margin-top: -9%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  max-width: 40%;
+  border-radius: 10px;
+  padding: 1%;
+ 
+}
+.input-boxes4:hover{
+  border-color:black;
+}
+.value-box1{
+  padding: 5px;
+  width: 88%;
+  outline: none;
+  margin-left: 0.5%;
+  border-style: none;
+}
+.input-boxes5{
+  margin-top: 5%;
+  margin-left: 8%;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+.value-box2{
+  outline: none;
+  font-size: 20px;
+  font-family: Bahnschrift;
+
+}
+.input-boxes6{
+  margin-top: -3.9%;
+  margin-left: 47%;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+}
+.btn{
+  padding:3%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 40%;
+  background-color: gold;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 28%;
+  margin-top: 10%;
+
+}
+.heading{
+  font-family: Bahnschrift;
+}
+
+
+#navbar{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 11.5vw;
+  margin-right: 11.5vw;
+}
+#navbar>a{
+  border: solid black 1px;
+  border-radius: 15px;
+  padding: 17px;
+  margin: 5px;
+  width: 140;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align:center;
+  color:black;
+  font-family: Bahnschrift;
+  
+}
+#navbar>a:hover i{
+  animation: rotate 1s ease-in-out;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#navbar>a:hover{
+  background-color: black;
+  color: white;
+}
+#navbar>a:active{
+  opacity:0.7;
+}
+.Ending{
+  margin-left: 11.5vw;
+  margin-right: 11.5vw;
+  margin-top: 0px; 
+}
+.I4{
+  width: 410px;
+  height: 320px;
+  margin: 20px 20px 10px ;
+}
+.endingsubtitle{
+  font-family: Bahnschrift;
+  font-size: 25px;
+  padding-bottom: 50px;
+  color: rgb(92, 92, 27);
+  font-weight: 550;
+}
+.I4 li {
+  list-style-type: none;
+  padding-top: 7px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 550;
+
+}
+.I4 ol li a:link,a:visited{
+  text-decoration: none;
+  color: rgb(128, 128, 1);
+}
+.I4 ol li a:hover{
+  text-decoration: underline;
+  color: rgb(128, 128, 1);
+}
+.widebox{
+  background-color: rgb(255, 240, 209);
+  margin-top: 150px;
+
+}
+.Imagesscroll{
+  display: flex;
+  overflow: auto;
+  justify-content:space-between;
+  scroll-behavior: smooth;
+}

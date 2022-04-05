@@ -1,0 +1,366 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+    margin-top: 50px;
+  }
+  h1{
+    font-family: Bahnschrift;
+    font-weight: 800;
+    margin-left: 11.5vw;
+    align-items: baseline;
+  }
+  h2{
+    font-family: Bahnschrift;
+    margin-left: 11.5vw;
+    
+  }
+  .logo{
+    height: 48px;
+    width: 48px;
+  }
+  
+  #logoimg>img{
+    border-radius: 50%;
+  }
+  #logo>input{
+    padding: 6px;
+    width: 20vw;
+    margin-left: 400;
+    font-size: 17px;
+    border-radius: 40px;
+    border: solid;
+    border-color: lightgray;
+  }
+  #logo{
+    display: inline-flex;
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 11vw;
+    margin-right:11.5vw;
+    align-items: baseline;
+  }
+  #explore_chd{
+    font-size: 50px;
+    font-weight: 1000;
+    margin-left: 11.5vw;
+    margin-right:11.5vw;
+    font-family: Bahnschrift;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    transition: all 0.5s ease;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  /* Navigation Bar */
+  #navbar{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 11.5vw;
+    margin-right:11.5vw;
+  }
+  #navbar>a{
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 14px;
+    margin: 5px;
+    font-weight: 400;
+    font-family: Bahnschrift;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Rotating Icons */
+  #navbar>a:hover i{
+    animation: rotate 1s ease-in-out;
+  }
+  @keyframes rotate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  #navbar>a:hover{
+    background-color: black;
+    color: white;
+  }
+  #navbar>a:active{
+    opacity: 0.7;
+  }
+  #explore_chd{
+    margin-top: 10px;
+  }
+  
+  
+  /* Picture Box */
+  #picbox{
+    margin: 50px 0px ;
+    display: flex;
+    overflow: hidden;
+    margin-left: 11.5vw;
+    margin-right:11.5vw;
+  }
+  
+  #picbox>a>img{
+    width: 400px;
+    height: 300px;
+    margin: 1px;
+    transition: all 0.3s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: picscroll 40s linear 1s infinite alternate;
+  }
+  #picbox>a>img:hover{
+    opacity: 0.8;
+  }
+  @keyframes picscroll{
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-1700px);
+    }
+  }
+  /* Navigation */
+  #nav{
+    margin: 50px 0px;
+    font-size: small;
+    color: rgb(39, 38, 38);
+    margin-left: 11.5vw;
+    margin-right:11.5vw;
+  }
+
+/* Essentials */
+.start{
+    margin: 100px 0px 0px 0px;
+}
+.button>i{
+    margin-top: 230;
+    margin-left: 10;
+    margin-right:11.5vw;
+    border: solid 2px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.button>i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* .button:focus .box{
+animation: scroller 30s linear infinite alternate;
+}
+@keyframes scroller{
+from{
+    transform: translateX(0);
+}
+to{
+    transform: translateX(-1600px);
+}
+} */
+.start>.para{
+    width: 300px;
+}
+.para{
+    width: 600;
+    color: rgb(56, 56, 56);
+    font-size: 20;
+    margin: 0px 0px 50px;
+    margin-left: 11.5vw;
+  
+}
+#viewmore{
+    font-size: 17px;
+    font-weight: lighter;
+}
+#viewmore:hover{
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+}
+.scroll{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 50px 0px 0px 0px;
+}
+.essential{
+    display: flex;
+}
+.box:hover{
+   box-shadow: 3px 3px 4px black;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 20px 5px;
+    transition: all 0.5s;
+}
+.fa-heart{
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    transition: all 0.5s;
+}
+.fa-heart:hover{
+    cursor: pointer;
+    color: red;
+}
+.boxhead{
+    background-color: white;
+    font-weight: bold;
+    font-size: 18;
+}
+/* Background images */
+#nada{
+    background-image: url(nada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#zoo{
+    background-image: url(zoo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mata{
+    background-image: url(mata.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#garden{
+    background-image: url(garden.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fort{
+    background-image: url(fort.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#tulip{
+    background-image: url(tulip.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sun{
+    background-image: url(sun.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#ihg{
+    background-image: url(ihg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#pallavi{
+    background-image: url(pallavi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#ramgarh{
+    background-image: url(ramgarh.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#bella{
+    background-image: url(bella.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#hops{
+    background-image: url(hops.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#patio{
+    background-image: url(patio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#nik{
+    background-image: url(nik.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#bansal{
+    background-image: url(bansal.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sindhi{
+    background-image: url(sindhi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.size{
+    width: 296;
+    height: 247;
+}
+/* Videos */
+iframe{
+    visibility: hidden;
+    width: 296;
+    height: 247;
+}
+.box:hover iframe{
+    visibility: visible;
+}
+.Ending{
+    margin-left: 11.5vw;
+    margin-right:11.5vw;
+    margin-top: 0px; 
+  }
+  .I4{
+    width: 410px;
+    height: 320px;
+    margin: 20px 20px 10px;
+  }
+  .endingsubtitle{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(92, 92, 27);
+    font-weight: 550;
+  }
+  .I4 li {
+    list-style-type: none;
+    padding-top: 7px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  .I4 ol li a:link{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }
+  .Imagesscroll{
+    display: flex;
+    overflow: auto;
+    justify-content:space-between;
+  }
+  .widebox{
+    background-color: rgb(255, 240, 209);
+    margin-top: 90px;
+  }
+  .I4 ol li a:link{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }
+  .I4 ol li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .I4 ol li a:visited{
+    text-decoration: none;
+    color: rgb(128, 128, 1);
+  }

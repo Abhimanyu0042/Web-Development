@@ -1,0 +1,322 @@
+
+#brand{
+  display: inline-flex;
+  margin-left: 11.5vw;
+  margin-top: 6vh;
+}
+.brand1{
+  font-weight:bold;
+  font-size: 240%;  
+}
+.logo{
+  height: 48px;
+  width: 48px;
+}
+#signupbar{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 44vw;
+}
+#signupbar>a{
+  border: solid white 4px;
+  border-radius: 30px;
+  padding: 9px;
+  margin: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align:center;
+  color: black;
+  font-size: 18px ;
+  font-family: Bahnschrift Black;
+}
+#signupbar>a:hover{
+  background-color: rgb(238, 238, 238);
+  color:black;
+}
+#signupbar>a:active{
+  opacity: 0.7;
+}
+.trip{
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    font-family: Bahnschrift;
+   
+    
+}
+.input-box{
+ font-size: 17px;
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+ font-family: Bahnschrift;
+}
+.input-box1,.input-box2,.input-box3,.input-box4,.input-box5{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 0px;
+  width: 240px;
+  box-shadow: 2px 2px 2px;
+  height: 60px;
+  font-family: Bahnschrift;
+
+}
+.value-box{
+  width: 90%;
+  margin-left: 0.5%;
+  padding: 2px;
+  font-size: 15px;
+  outline: none;
+  border-style: none;
+  font-family: Bahnschrift;}
+
+
+
+.lower{
+  
+  margin-left: 11.5vw;
+  margin-right: 11.5vw;
+  padding-top: 20px;
+
+
+}
+.lower1{
+  background-color: rgba(211, 211, 211, 0.315);
+  display: flex;
+
+}
+details > summary {
+  list-style: none;
+
+}
+details > summary::-webkit-details-marker {
+  display: none;
+  
+}
+
+#navbar{
+    
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+  }
+#navbar>a{
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 140;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align:center;
+    color:black;
+    font-family: Bahnschrift;
+    
+  }
+#navbar>a:hover i{
+    animation: rotate 1s ease-in-out;
+  }
+@keyframes rotate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+#navbar>a:hover{
+    background-color: black;
+    color: white;
+  }
+#navbar>a:active{
+    opacity:0.7;
+  }
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background:black; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-style: solid;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+#more {display: none;}
+
+.filter{
+  border: 0.1px solid white;
+  padding: 15px;
+ background-color: white;
+ width: 200px;
+
+  
+
+}
+.flights{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  overflow: auto;
+  justify-content: space-between;
+  height: 1200px;
+  padding-top: 12px;
+  margin-left: -200px;
+}
+.box1{
+  width: 800px;
+  height: 100vh;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+
+}
+.box1:hover{
+  box-shadow: 3px 3px 12px lightgray;
+}
+.airlogo{
+  height: 48px;
+  width: 48px;
+  
+}
+.airlogocontent{
+  padding-left: 20px;
+  font-family: Bahnschrift SemiCondensed;;
+}
+.duration{
+  position: relative;
+  left: 200px;
+  font-family: arial;
+  opacity: 0.8;
+  font-size: 15px;
+  text-align: right;
+  font-family: Bahnschrift;
+}
+.money{
+  position: relative;
+  left: 330px;
+  font-size: 30px;
+  bottom: 10px;
+  font-family: Bahnschrift SemiCondensed;
+  
+}
+.book{
+  position: relative;
+  height: 45px;
+  width: 150px;
+  top: 35px;
+  left: 180px;
+  border-radius: 20px;
+  background-color: #f2b203;
+  border-color:  #f2b203;
+  box-shadow:3px 3px 6px lightgray;
+}
+.book:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.sponsored{
+  height: 420px;
+  width: 265px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 5px;
+  background-image: url("redfox.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -80px ;
+}
+
+.sponsoredtext{
+  position: relative;
+  top: 340px;
+  padding-left: 0px;
+  font-family: Bahnschrift;
+  color: black;
+}
+.sponsored>a:link{
+  text-decoration: none;
+  color: black;
+}
+.sponsored:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.Ending{
+  margin-left: 11.5vw;
+  margin-right: 11.5vw;
+  margin-top: 0px; 
+}
+.I4{
+  width: 410px;
+  height: 320px;
+  margin: 20px 20px 10px ;
+}
+.endingsubtitle{
+  font-family: Bahnschrift;
+  font-size: 25px;
+  padding-bottom: 50px;
+  color: rgb(92, 92, 27);
+  font-weight: 550;
+}
+.I4 li {
+  list-style-type: none;
+  padding-top: 7px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 550;
+
+}
+.I4 ol li a:link,a:visited{
+  text-decoration: none;
+  color: rgb(128, 128, 1);
+}
+.I4 ol li a:hover{
+  text-decoration: underline;
+  color: rgb(128, 128, 1);
+}
+.widebox{
+  background-color: rgb(255, 240, 209);
+
+}
+.Imagesscroll{
+  display: flex;
+  overflow: auto;
+  justify-content:space-between;
+  scroll-behavior: smooth;
+}

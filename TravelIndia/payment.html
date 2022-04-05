@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="landscape.png" type="imgpng">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="payment.css">
+<script src="https://kit.fontawesome.com/2fe55cae00.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+<body>
+    <div id="brand" ><img class="logo" src="landscape.png"><div class="brand1">Travellndia</div>
+    <div id="signupbar">
+        <a href="#trips"><i class="far fa-heart"></i> Trip</a>
+        <a href="feedback.html"><i class="fas fa-pencil-alt"></i> Query</a>
+        <a href="#Alerts"><i class="far fa-bell"></i> Alerts</a>
+    </div>
+    </div>
+    <div class="container-fluid content">
+    <div class="boxese">
+    <div class="payment-box">
+        <div class="back-button"><i class="fas fa-arrow-left"></i> Back</div>
+        <p class="text1">Choose a<br>
+            Payment Option
+        </p>
+        <p class="money">Pay <font class="money-value">&#8377;XX,XXX</font> to TravelIndia</p>
+    </div>
+    <div class="card-box">
+        <div class="cards">
+            <ul type="none">
+                <li data-toggle="modal" data-target="#exampleModal5" data-whatever="item 5">
+                <p class="quick-option">Quick Options</p
+                <p class="visa"><i class="fab fa-cc-visa" id="h1"></i> HDFC Credit Card****4825<i class="fas fa-arrow-circle-right" id="a1"></i>
+                </p>
+            </ul>
+            
+            </p>
+            <hr>
+            <p class="more-options">More Options</p>
+            <ul type="none">
+                <li data-toggle="modal" data-target="#exampleModal1" data-whatever="item 1">
+                    <p class="text"><i class="fas fa-credit-card"></i>
+                        Cards(Credit/Debit)&emsp;<i class="fas fa-arrow-circle-right" id="a1"></i></p>
+                    <hr>
+                </li>
+                <li data-toggle="modal" data-target="#exampleModal2" data-whatever="item 2">
+                    <p class="text"><i class="fas fa-university"></i> Net Banking&emsp;&emsp;<i class="fas fa-arrow-circle-right"
+                            id="a1"></i></p>
+                    <hr>
+
+                </li>
+                <li data-toggle="modal" data-target="#exampleModal3" data-whatever="item 3">
+                    <p class="text"><i class="fab fa-google-pay"></i> UPI<i class="fas fa-arrow-circle-right"
+                            id="a1"></i></p>
+                    <hr>
+                </li>
+                <li data-toggle="modal" data-target="#exampleModal4" data-whatever="item 4">
+                    <p class="text"><i class="fas fa-wallet"></i> Wallet<i class="fas fa-arrow-circle-right"
+                            id="a1"></i></p>
+                    <hr>
+
+                </li>
+
+            </ul>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Enter Card Details
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card1">
+                                Card Number<input type="text" class="card-value" maxlength="19" placeholder="1111-2222-3333-4444" required><br>
+                                Expiry Date<input type="date" class="card-value" required><br>
+                                CVV/CVC<input type="text" class="card-value" maxlength="3" required><br>
+                                Cardholder Name<input type="text" class="card-value" required><br>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Payment Successful')">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Select Your Bank</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <a href="https://www.onlinesbi.com/"><button class="btn1">SBI</button></a>
+                                <a href="https://netbanking.hdfcbank.com/netbanking/"><button
+                                        class="btn1">HDFC</button></a>
+                                <a href="https://netpnb.com/"><button class="btn1">PNB</button></a>
+                                <a href="https://www.kotak.com/en/digital-banking/ways-to-bank/net-banking.html"><button
+                                        class="btn1">KOTAK</button></a>
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Enter Your UPI Id
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                UPI Adress <input type="text">
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"onclick="alert('Payment Successful')">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Select Payment Mode
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <a href="https://paytm.com/"><button class="btn1"><span class="iconify"
+                                            data-icon="simple-icons:paytm" data-width="30"></span></button></a>
+                                <a href=""><button class="btn1"><span class="iconify" data-icon="cib:google-pay"
+                                            data-width="30"></span></button></a>
+                                <a href=""><button class="btn1"><span class="iconify" data-icon="simple-icons:phonepe"
+                                            data-width="30"></span></button></a>
+                                <a href=""><button class="btn1"><span class="iconify" data-icon="cib:cc-amazon-pay"
+                                            data-width="30"></span></button></a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                        
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Confirm Payment
+                        </h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">×</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <p class="card1">
+                            <p class="t1">Pay Using HDFC Credit Card****4825 </p>
+                     </div>
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Payment Successful')">
+                             Pay
+                         </button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+    <footer class="container-fluid widebox">
+        <div class="Ending">
+            <div class="Imagesscroll">
+                <div class="I4">
+                    <ol ><font class="endingsubtitle">About Travelindia</font>
+                        <li><a href="#abouttravelindia">About Us</a></li>
+                        <li><a href="#Blogs">Blogs</a></li>
+                        <li><a href="#contactus">Contact us</a></li>
+                        <li><a href="#booking">Book your trip</a></li>
+                        <li><a href="followus">Follow us</a></li>
+                        <li><i class="fab fa-twitter"></i>ㅤㅤ<i class="fab fa-instagram"></i>ㅤㅤ<i class="fas fa-envelope"></i>ㅤㅤ<i class="fab fa-facebook"></i></li>
+                    </ol>
+                </div>
+                <div class="I4">
+                    <ol ><font class="endingsubtitle">For Travellers</font>
+                        <li><a href="#account">Create an Account</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#review">Write a Review</a></li>
+                        <li><a href="#guideline">Review Guidelines</a></li>
+                        <li><a href="followus">Follow us</a></li>
+                        
+                    </ol>
+                </div>
+                <div class="I4">
+                    <ol ><font class="endingsubtitle">Explore</font>
+                        <li><a href="#login">Join Us</a></li>
+                        <li><a href="#Feedback">Feedback</a></li>
+                        <li><a href="#Travelarticles">Travel articles</a></li>
+                        <li><a href="#Helpcenter">Help Center</a></li>
+                        <li><a href="#Policy">Privacy Policy</a></li>
+                        <li><a href="#Terms">Terms and Condition</a></li>
+                        <li><a href="#youtube">Our Youtube Channel</a></li>
+                        <li><a href="#Responsibility">How to travel responsibly</a></li>
+                        
+                    </ol>
+                </div>
+                <div class="I4">
+                    <ol ><font class="endingsubtitle">Learn More</font>
+                        <li><a href="#website">How to Build this Site</a></li>
+                        <li><a href="#tour">Tours and Travel</a></li>
+                        <li><a href="#Advertise">Advertise With Us</a></li>
+                        <li><a href="#Call">Toll-free Number</a></li>
+                        <li><i class="fas fa-phone"></i></li>
+                        
+                    </ol>
+                </div>
+            </div>
+    
+    </footer>
+</body>
+</html>
