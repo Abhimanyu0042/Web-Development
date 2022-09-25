@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>Enter Your Details</h1>
+    <form action="">
+
+        <!-- by default its of 30 characters -->
+        <label for="">First Name : </label> <input type="text">
+        <label for="">Last Name : </label> <input type="text">
+        <br><br>
+
+        <label for="">Age : </label>
+        <input type="number">
+
+        <br><br>
+
+        <label for="">Date of Birth : </label>
+        <input type="date">
+
+        <br><br>
+
+        <label for="">Email : </label>
+        <input type="email">
+
+        <label for="">Password : </label>
+        <input type="password">
+
+        <br><br>
+
+        <!-- name is used to identify value after submission
+        for and id is used to link label and input -->
+
+        <p>Enter your T-shirt Size : </p>
+        <input id="small" name="tshirtsize" type="radio" value="small">
+        <label for="small">Small </label>
+        
+        <input id="medium" name="tshirtsize" type="radio" value="medium">
+        <label for="medium">Medium</label>
+        
+        <input id="large" name="tshirtsize" type="radio" value="large">
+        <label for="large">Large</label>
+
+        <br><br>
+
+        <label for="color">Your favourite color : </label>
+        <input type="color">
+
+        <br><br>
+
+        <label for="cars">Choose favourite car company : </label>
+        <select name="Carcompany" id="cars">
+            <option value="Volvo"> Volvo</option>
+            <option value="Fiat"> Fiat</option>
+            <option value="Tata"> Tata</option>
+            <option value="Hyundai"> Hyundai</option>
+            <option value="Mahindra"> Mahindra</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="AbtYourself">Tell About Yourself : </label>
+        <textarea name="AbtYourself" id="aboutyourself" cols="70" rows="5"></textarea>
+         
+        <input type="reset">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
