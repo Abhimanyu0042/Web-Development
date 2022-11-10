@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        .Page{
+            background-color: black;
+            width: 100%;
+            height: fit-content;
+            margin-top: 10em;
+            margin-left: 10%;
+            margin-right: 10%;
+
+        }
+
+        #Nav{
+            height: 12vh;
+            padding-top: 2rem;
+        }
+
+        .Different_sections{
+            height: 18vh;
+            width: 60vw;
+            text-align:center;
+            padding-top: 3rem;
+            margin: 10px;
+            background-color: silver;
+        }
+        main{
+            background-color: aqua;
+            width:60vw;
+            height: 60vh;
+        }
+        .Main{
+            width: 40vw;
+            background-color: silver;
+            height: 50vh;
+            text-align: center;
+            padding-top: 8rem;
+            display: inline-block;
+        }
+        .section{
+            width: 14vw;
+            background-color: silver;
+            height: 24vh;
+            text-align: center;
+            padding-top: 3.5rem;
+            float: right;            
+        }
+        .aside{
+            width: 14.7vw;
+            background-color: silver;
+            height: 24vh;
+            text-align: center;
+            padding-top: 2.5rem;
+            float: right;  
+        }
+        #Footer{
+            height: 18vh;
+            width: 60vw;
+            text-align:center;
+            padding-top: 3rem;
+            background-color: silver;
+            float:left;
+        }
+        #Aside2{
+            height: 12vh;
+            width: 60vw;
+            text-align:center;
+            padding-top: 2rem;
+            background-color: silver;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="Page">
+        <div class="Different_sections">Header</div>
+        <div id="Nav" class="Different_sections">Nav</div>
+        <main>
+        <div class="Main">Main</div>
+        <div class="aside">Aside</div>
+        <div class="section">Section</div>
+        </main>
+        <footer>
+        <div id="Aside2" class="Different_sections">Aside</div>
+        <div id="Footer" class="Different_sections">Footer</div>
+    </footer>
+    </div>
+    
+</body>
+</html>

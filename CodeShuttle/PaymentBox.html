@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Card Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: bahnschrift;
+        }
+
+        .card_box{
+            margin-inline: auto;
+            margin-top: 15vh;
+            max-width: 350px;
+            border: 2px solid white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            position: relative;
+        }
+
+        h2{
+            margin: 1em ;
+        }
+
+        span{
+            font-size: small;
+            margin-inline: 0.5em;
+       }
+
+        .payment_toggle{
+            padding-bottom: 0.6rem;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+
+        p{
+            font-size: 11px;
+            text-align: left;
+            margin-left: 3em;
+            margin-top: 10%;
+            margin-bottom: 1em;
+        }
+
+        input :focus{
+            border: 1px solid rgb(246, 246, 246);
+
+        }
+
+        input{
+            padding: 0.6rem;
+            margin-bottom: 2em;
+            background-color: rgb(246, 246, 246);
+            border: 1px solid rgb(246, 246, 246);
+            padding-left: 2rem;
+        }
+
+        .master{
+            background-image: url(Images/mastercard.png);
+            background-repeat: no-repeat;
+            background-position: 7px 7px;
+        }
+
+        .visa{
+            background-image: url(Images/visa.png);
+            background-repeat: no-repeat;
+            background-position: 7px 7px;
+        }
+
+        .btn{
+            padding: 0.8rem;
+            cursor: pointer;
+            margin-bottom: 2em;
+            background-color: rgb(246, 246, 246);
+            border: 1px solid rgb(246, 246, 246);
+            font-size: xx-small;
+        }
+
+        #new_card{
+            margin-top: 0%;
+            
+        }
+
+        #holder_name{
+            font-size: 8px;
+            color: rgb(75, 75, 75);
+            position: absolute;
+            top: 313px;
+            left: 40px;
+        }
+
+        #card_number{
+            font-size: 8px;
+            color: rgb(75, 75, 75);
+            position: absolute;
+            top: 383px;
+            left: 40px;
+        }
+
+        .input_new_card{
+            width: 290px;
+            padding-top: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        .card_details_exp_cvv{
+            font-size: small;
+            width: 35%;
+            margin: 0em 1.5em 1em 1.5em;
+            display: inline-block;
+        }
+
+        .add_card_btn{
+            color: white;
+            background-color: rgb(16, 229, 16);
+            border: none;
+            width: 274px;
+            padding-top: 1rem;
+            padding-left: 0.5rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2em;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card_box">
+        <h2>Settings</h2>
+        <span>Account</span><span class="payment_toggle">Payment</span>
+        <form action="#">
+            <p>Saved Cards:</p>
+            <input type="text" class="master" placeholder="**** **** **** 3193" name="master"><button class="btn">Remove card</button><br>
+            <input type="text" class="visa" placeholder="**** **** **** 4296" name="visa"><button class="btn">Remove card</button>
+            <p id="new_card">Add new card:</p>
+            <label for="holder-name" id="holder_name">Card holder name</label>
+            <input class="input_new_card" type="text" placeholder="Bojan Viner">
+            <label for="card_number" id="card_number">Card number</label>
+            <input class="input_new_card" type="tel" inputmode="numeric" name="card_number" maxlength="19" placeholder="**** **** **** ****">
+            <input class="card_details_exp_cvv" type="text" name="exp.date" placeholder="Exp.date">
+            <input class="card_details_exp_cvv" type="text" inputmode="numeric" maxlength="3" name="cvv" placeholder="CVV">
+        </form>
+        <button class="add_card_btn" type="submit">Add card</button>
+    </div>
+    
+</body>
+</html>

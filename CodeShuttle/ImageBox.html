@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin-inline: auto;
+            font-family: Bahnschrift;
+        }
+        .Image-box{
+            margin-top: 20vh auto;
+            border: 8px solid black;
+            max-width: fit-content;
+            background-size:auto;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .text-tab{
+            margin: 20px 10px 20px 20px;
+            max-width: fit-content;
+            max-height: fit-content;
+        }
+
+        .text-tab h4,p,b,button{
+            margin-bottom: 8px;
+        }
+
+        .Date{
+            color: grey;
+        }
+
+        .btn{
+            padding: 0.5em;
+            background-color: black;
+            color: white;
+            text-decoration: solid;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Image-box">
+        <img src=https://images.unsplash.com/photo-1667802302371-a4bc29a48d69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60 alt="New York City">
+        <div class="text-tab">
+        <h4>NEW YORK</h4>
+        <p class="Date">FRI 27 NOV 2016</p>
+        <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, optio.</b></p>
+        <button class="btn">Buy Tickets</button>
+    </div>
+
+    </div>
+    
+</body>
+</html>
