@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 80px 80px 80px 80px;
+            grid-template-rows: 100px 80px 80px 80px 80px 80px;
+            width: fit-content;
+            margin-top: 5%;
+            gap: 3px;
+        }
+
+        div{
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+        .container{
+            border:1px solid white
+        }
+        .input-box{
+            display: grid;
+            font-size: 3rem;
+            grid-column: 1/ span 4;
+            text-align: right;
+            padding-top: 1em;
+            color: white;
+            background-color: black;
+        }
+        #clear{
+            grid-column: 1/ span 2;
+        }
+        .operators{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: orange;
+            cursor: pointer;
+        }
+        .numbers{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+        }
+        #zero{
+            grid-column: 1/ span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">0</div>
+        <div id="clear" class="operators">C</div>
+        <div class="operators">←</div>
+        <div class="operators">/</div>
+        <div class="numbers">7</div>
+        <div class="numbers">8</div>
+        <div class="numbers">9</div>
+        <div class="operators">x</div>
+        <div class="numbers">4</div>
+        <div class="numbers">5</div>
+        <div class="numbers">6</div>
+        <div class="operators">-</div>
+        <div class="numbers">1</div>
+        <div class="numbers">2</div>
+        <div class="numbers">3</div>
+        <div class="operators">+</div>
+        <div id="zero" class="numbers">0</div>
+        <div class="operators">=</div>
+    </div>
+    
+</body>
+</html>
