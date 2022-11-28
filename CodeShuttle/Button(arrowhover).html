@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .btn{
+            padding: 1.5rem 2rem;
+            font-size: x-large;
+            background-color: orange;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            transition: 0.5s ease-in;
+            position: relative;
+            font-weight: bold;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn::after{
+            content: ' >>';
+            position: absolute;
+            left: 190px;
+        }
+        .btn:hover{
+            transition: .5s ease-in;
+            padding-left: 1rem;
+            padding-right: 3rem;
+        }
+
+        .btn:hover::after{
+            content: ' >>';
+            transition: .5s ease-in;
+            left: 90px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn">Hover</button>
+
+    </div>
+
+</body>
+
+</html>
