@@ -7,6 +7,7 @@ export const subtraction = (a, b) => {
 }
 
 export default function multiply(a, b) { //default can only be one function in  whole file
+    //we can only use default with object or function
     return a*b;
 }
 
