@@ -8,7 +8,7 @@ function checkout (myFunc) {
         })
 
     })
-
+    
 }
 
 function getOrderinfo(next){
