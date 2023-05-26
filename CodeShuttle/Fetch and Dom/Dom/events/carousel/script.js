@@ -13,6 +13,8 @@ const n= images.length;
 const flexcontainer = document.getElementById('flex-container');
 const leftbtn = document.getElementById('lft-btn');
 const rightbtn = document.getElementById('right-btn');
+const carouselNav = document.getElementById('carousel-nav');
+
 
 const containerWidth = 50;
 const flexcontainerWidth = n*containerWidth;
@@ -23,28 +25,48 @@ for(let i = 0;i<n;i++){
     newImg.src = images[i];
     newImg.classList.add('img-style');
     flexcontainer.appendChild(newImg);
+
+    const dotDiv = document.createElement('div');
+    dotDiv.classList.add('carousel-dot');
+    carouselNav.appendChild(dotDiv);
+
+    dotDiv.addEventListener('click',(event) => {
+       const index =  [...carouselNav.children].indexOf(event.target);
+       console.log(index);
+       curPosition = index;
+       showimg(currentPos);
+    })
 }
 
 let currentPos = 0;
+showimg(0);
 leftbtn.addEventListener('click', () => {
     if(currentPos > 0){
-        currentPos--;
+        showimg(currentPos-1);
+
     }else{
-        currentPos = n-1;
+        showimg(n-1);
+        
     }
-    showimg();
 })
 
 rightbtn.addEventListener('click', () => {
     if(currentPos < n-1){
-        currentPos++;
+        showimg(currentPos + 1);
     }else{
-        currentPos = 0;
+        showimg(0);
     }
-    showimg();
 })
 
-function showimg() {
+function showimg(position) {
+
+    const prevDot = carouselNav.children[currentPos];
+    prevDot.classList.remove('active');
+    currentPos = position;
+
+    const curDot = carouselNav.children[currentPos];
+    curDot.classList.add('active');
+
     const translateXDistance = -currentPos*containerWidth;
     flexcontainer.style.transform = `translateX(${translateXDistance}vw)`;
 
