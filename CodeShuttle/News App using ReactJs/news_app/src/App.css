@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: bahnschrift; */
+}
+@media screen and(max-width: 790px) {
+    .body{
+        margin-inline: 0.5rem;
+    }
+}
+@media screen and (min-width: 790px){
+    .body{
+        margin-inline: 4rem;
+    }     
+}
+
+
+
+
+

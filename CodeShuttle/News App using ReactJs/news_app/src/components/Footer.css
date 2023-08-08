@@ -1,0 +1,30 @@
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 50px;
+    gap: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+li{
+    cursor: pointer;
+}
+
+ul li:hover{
+    text-decoration: underline;
+}
+.text-p{
+    color: white;
+}
