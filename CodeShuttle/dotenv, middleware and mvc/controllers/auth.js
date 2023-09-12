@@ -57,7 +57,12 @@ const getUserController = (req,res) => {
          res.status(403).send('User id is required'); 
          return;
     }
-    const user =  User.find(item => item.id == id);
+    const user =  User.findById({id});
+
+    if(!user){
+        res.status(404).send('User not found');
+        return;
+    }
 
     res.status(200).json(user);
 }
