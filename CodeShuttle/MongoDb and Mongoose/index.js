@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
-const mongoUrl = "mongodb+srv://kashyapabhimanyu639:8g6zArY2LmZbjbdB@cluster0.qdjoxdi.mongodb.net/?retryWrites=true&w=majority"
+
+const dotenv = require('dotenv');
+dotenv.config({path:'./.env'});
+
+const mongoUrl = process.env.mongoUrl;
 const user = require('./models/user');
 try {
     mongoose.connect(mongoUrl,{

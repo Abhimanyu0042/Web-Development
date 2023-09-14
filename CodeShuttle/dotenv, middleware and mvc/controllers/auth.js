@@ -13,11 +13,11 @@ const signupController = async (req,res) => {
     // const id = Math.floor(Math.random()*1000);
 
     //check if user email is already present or not
-    const user = User.findOne({email});
-    if(user){
-        res.send('User is already present');    
-        return;
-    }
+    // const user = User.findOne({email});
+    // if(user){
+    //     res.send('User is already present');    
+    //     return;
+    // }
 
     const newUser = new User({ email , password });
     await newUser.save();
